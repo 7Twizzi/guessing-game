@@ -10,7 +10,7 @@ function checkGuess() {
     message.innerText = `You got it in ${tries} tries... but at what cost? 😈`;
     document.body.style.background = "#500";
     playSound();
-  } else if (isNaN(guess) || guess < 1 || guess > 100) {
+  } else if (isNaN(guess) || guess < 1 || guess > 10) {
     message.innerText = "That’s not even a valid guess... 😐";
   } else {
     message.innerText = `Wrong... Try again. 😵‍💫`;
